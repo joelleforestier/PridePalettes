@@ -7,7 +7,7 @@
 flag(flag = NULL)
 }
 \arguments{
-\item{palette}{Which Pride flag would you like to generate? Options are: the six-color Pride Flag ("pride"), the Philadelphia People Of Color Pride Flag ("philly_poc_pride"), Gilbert Baker's 1978 Pride Flag ("gilbert_baker_pride"), the Bisexual Pride Flag ("bisexual_pride"), the Pansexual Pride Flag ("pansexual_pride"), the Asexual Pride Flag ("asexual_pride"), the Trans Pride Flag ("trans_pride"), the Genderfluid Pride Flag ("genderfluid_pride"), the Genderqueer Pride Flag ("genderqueer_pride"), the Polysexual Pride Flag ("polysexual_pride"), the Agender Pride Flag ("agender_pride"), the Aromantic Pride Flag ("aromantic_pride"), and the Nonbinary Pride Flag ("nonbinary_pride").}
+\item{flag}{Which Pride flag would you like to generate? Options are: the six-color Pride Flag ("pride"), the Philadelphia People Of Color Pride Flag ("philly_poc_pride"), Gilbert Baker's 1978 Pride Flag ("gilbert_baker_pride"), the Bisexual Pride Flag ("bisexual_pride"), the Pansexual Pride Flag ("pansexual_pride"), the Asexual Pride Flag ("asexual_pride"), the Trans Pride Flag ("trans_pride"), the Genderfluid Pride Flag ("genderfluid_pride"), the Genderqueer Pride Flag ("genderqueer_pride"), the Polysexual Pride Flag ("polysexual_pride"), the Agender Pride Flag ("agender_pride"), the Aromantic Pride Flag ("aromantic_pride"), and the Nonbinary Pride Flag ("nonbinary_pride").}
 }
 \description{
 Using the pride_palette function and ggplot2, create a Pride flag. The function's only argument (flag) is used to select the flag you want to generate.
