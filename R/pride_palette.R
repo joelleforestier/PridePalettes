@@ -20,8 +20,6 @@
 #'   geom_point(aes(color = var3)) +
 #'   theme_minimal()
 #'
-#' simusim(n = 150, b1 = .2, b2 = .15)
-#'
 #' @export
 
 pride_palette <- function(palette) {
