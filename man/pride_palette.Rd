@@ -25,8 +25,6 @@ ggplot(data = data, mapping = aes(x = var1, y = var2)) +
   geom_point(aes(color = var3)) +
   theme_minimal()
 
-simusim(n = 150, b1 = .2, b2 = .15)
-
 }
 \author{
 Joel Le Forestier (Twitter: @JoelLeForestier; Website: joelleforestier.com; Email: joel.leforestier@mail.utoronto.ca)
