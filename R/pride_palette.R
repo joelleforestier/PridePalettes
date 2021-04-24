@@ -43,123 +43,120 @@
 #'   theme_minimal()
 #'
 #' @export
-
 pride_palette <- function(palette) {
-
-  # Pride Flag
-  pride <- c("#e40303", # red
-             "#ff8c00", # orange
-             "#ffed00", # yellow
-             "#008026", # green
-             "#004dff", # blue
-             "#750787") # purple
-
-  # Philly People of Color Pride Flag
-  philly_poc_pride <- c("#000000", # black
-                        "#785017", # brown
-                        "#e40303", # red
-                        "#ff8c00", # orange
-                        "#ffed00", # yellow
-                        "#008026", # green
-                        "#004dff", # blue
-                        "#750787") # purple
-
-  # Gilbert Baker Pride Flag
-  gilbert_baker_pride <- c("#f564ae", # pink
-                           "#e40303", # red
-                           "#ff8c00", # orange
-                           "#ffed00", # yellow
-                           "#008026", # green
-                           "#52ced9", # light blue
-                           "#391294", # dark purple
-                           "#750787") # red-purple
-
-  # Bisexual Pride Flag
-  bisexual_pride <- c("#D70270", # pink
-                      "#734F96", # purple
-                      "#0038A8") # blue
-
-  # Pansexual Pride Flag
-  pansexual_pride <- c("#ff218c", # pink
-                       "#ffd800", # yellow
-                       "#21b1ff") # blue
-
-  # Asexual Pride Flag
-  asexual_pride <- c("#000000", # black
-                     "#a3a3a3", # grey
-                     "#ffffff", # white
-                     "#800080") # purple
-
-  # Trans Pride Flag
-  trans_pride <- c("#5bcdfa", # blue
-                   "#f5a9b8", # pink
-                   "#ffffff") # white
-
-  # Gender Fluid Pride Flag
-  genderfluid_pride <- c("#ff75a3", # pink
-                         "#ffffff", # white
-                         "#bd18d6", # purple
-                         "#000000", # black
-                         "#333fbd") # blue
-
-  # Genderqueer Pride Flag
-  genderqueer_pride <- c("#B77FDD", # purple
-                         "#ffffff", # white
-                         "#48821E") # green
-
-  # Polysexual Pride Flag
-  polysexual_pride <- c("#F61CB9", # pink
-                        "#07D569", # green
-                        "#1C92F6") # blue
-
-  # Agender Pride Flag
-  agender_pride <- c("#000000", # black
-                     "#a3a3a3", # grey
-                     "#ffffff", # white
-                     "#b8f483") # green
-
-  # Aromantic Pride Flag
-  aromantic_pride <- c("#3da542", # green
-                     "#a7d379", # light green
-                     "#ffffff", # white
-                     "#a3a3a3", # grey
-                     "#000000") # black
-
-  # Nonbinary Pride Flag
-  nonbinary_pride <- c("#fff530", # yellow
-                       "#ffffff", # white
-                       "#9d59d1", # purple
-                       "#000000") # black
-
-  if (palette == "pride") {
-    colors <- pride
-  } else if (palette == "philly_poc_pride") {
-      colors <- philly_poc_pride
-  } else if (palette == "gilbert_baker_pride") {
-      colors <- gilbert_baker_pride
-  } else if (palette == "bisexual_pride") {
-      colors <- bisexual_pride
-  } else if (palette == "pansexual_pride") {
-      colors <- pansexual_pride
-  } else if (palette == "asexual_pride") {
-      colors <- asexual_pride
-  } else if (palette == "trans_pride") {
-      colors <- trans_pride
-  } else if (palette == "genderfluid_pride") {
-      colors <- genderfluid_pride
-  } else if (palette == "genderqueer_pride") {
-      colors <- genderqueer_pride
-  } else if (palette == "polysexual_pride") {
-      colors <- polysexual_pride
-  } else if (palette == "agender_pride") {
-      colors <- agender_pride
-  } else if (palette == "aromantic_pride") {
-      colors <- aromantic_pride
-  } else if (palette == "nonbinary_pride") {
-      colors <- nonbinary_pride
-  }
-
-  return(colors)
-
+  if (palette == "pride")
+    PRIDE_PALETTES[["pride"]]
+  else if (palette == "philly_poc_pride")
+    PRIDE_PALETTES[["philly_poc_pride"]]
+  else if (palette == "gilbert_baker_pride")
+    PRIDE_PALETTES[["gilbert_baker_pride"]]
+  else if (palette == "bisexual_pride")
+    PRIDE_PALETTES[["bisexual_pride"]]
+  else if (palette == "pansexual_pride")
+    PRIDE_PALETTES[["pansexual_pride"]]
+  else if (palette == "asexual_pride")
+    PRIDE_PALETTES[["asexual_pride"]]
+  else if (palette == "trans_pride")
+    PRIDE_PALETTES[["trans_pride"]]
+  else if (palette == "genderfluid_pride")
+    PRIDE_PALETTES[["genderfluid_pride"]]
+  else if (palette == "genderqueer_pride")
+    PRIDE_PALETTES[["genderqueer_pride"]]
+  else if (palette == "polysexual_pride")
+    PRIDE_PALETTES[["polysexual_pride"]]
+  else if (palette == "agender_pride")
+    PRIDE_PALETTES[["agender_pride"]]
+  else if (palette == "aromantic_pride")
+    PRIDE_PALETTES[["aromantic_pride"]]
+  else if (palette == "nonbinary_pride")
+    PRIDE_PALETTES[["nonbinary_pride"]]
+  else
+    stop("No such pride flag! Available pride palettes are described under Details section.")
 }
 
+PRIDE_PALETTES <- list(
+  # Pride Flag
+  pride = c("#e40303", # red
+            "#ff8c00", # orange
+            "#ffed00", # yellow
+            "#008026", # green
+            "#004dff", # blue
+            "#750787"), # purple
+  
+  # Philly People of Color Pride Flag
+  philly_poc_pride = c("#000000", # black
+                       "#785017", # brown
+                       "#e40303", # red
+                       "#ff8c00", # orange
+                       "#ffed00", # yellow
+                       "#008026", # green
+                       "#004dff", # blue
+                       "#750787"), # purple
+  
+  # Gilbert Baker Pride Flag
+  gilbert_baker_pride = c("#f564ae", # pink
+                          "#e40303", # red
+                          "#ff8c00", # orange
+                          "#ffed00", # yellow
+                          "#008026", # green
+                          "#52ced9", # light blue
+                          "#391294", # dark purple
+                          "#750787"), # red-purple
+  
+  # Bisexual Pride Flag
+  bisexual_pride = c("#D70270", # pink
+                     "#734F96", # purple
+                     "#0038A8"), # blue
+  
+  # Pansexual Pride Flag
+  pansexual_pride = c("#ff218c", # pink
+                      "#ffd800", # yellow
+                      "#21b1ff"), # blue
+  
+  # Asexual Pride Flag
+  asexual_pride = c("#000000", # black
+                    "#a3a3a3", # grey
+                    "#ffffff", # white
+                    "#800080"), # purple
+  
+  # Trans Pride Flag
+  trans_pride = c("#5bcdfa", # blue
+                  "#f5a9b8", # pink
+                  "#ffffff"), # white
+  
+  # Gender Fluid Pride Flag
+  genderfluid_pride = c("#ff75a3", # pink
+                        "#ffffff", # white
+                        "#bd18d6", # purple
+                        "#000000", # black
+                        "#333fbd"), # blue
+  
+  # Genderqueer Pride Flag
+  genderqueer_pride = c("#B77FDD", # purple
+                        "#ffffff", # white
+                        "#48821E"), # green
+  
+  # Polysexual Pride Flag
+  polysexual_pride = c("#F61CB9", # pink
+                       "#07D569", # green
+                       "#1C92F6"), # blue
+  
+  # Agender Pride Flag
+  agender_pride = c("#000000", # black
+                    "#a3a3a3", # grey
+                    "#ffffff", # white
+                    "#b8f483"), # green
+  
+  # Aromantic Pride Flag
+  aromantic_pride = c("#3da542", # green
+                      "#a7d379", # light green
+                      "#ffffff", # white
+                      "#a3a3a3", # grey
+                      "#000000"), # black
+  
+  # Nonbinary Pride Flag
+  nonbinary_pride = c("#fff530", # yellow
+                      "#ffffff", # white
+                      "#9d59d1", # purple
+                      "#000000") # black
+)

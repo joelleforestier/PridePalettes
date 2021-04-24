@@ -44,7 +44,7 @@ var3 <- as.factor(rep(1:8, times = 10))
 data <- data.frame(var1, var2, var3)
 
 ggplot(data = data, mapping = aes(x = var1, y = var2)) +
-  scale_color_manual(values = pride_palette(palette = "philly_poc_pride")) +
+  scale_color_manual(values = pride_palette("philly_poc_pride")) +
   geom_point(aes(color = var3)) +
   theme_minimal()
 
