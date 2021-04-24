@@ -2,13 +2,12 @@
 #'
 #' This function contains a set of palettes based on the colors of various Pride flags. The function's only argument (palette) is used to select the flag you want to use as the basis of your color scheme. This function works well wrapped inside the scale_color_manual and scale_fill_manual arguments in ggplot2.
 #'
-#' @usage pride_palette(palette = NULL)
-#'
 #' @param palette Which Pride flag would you like to use as the basis of your color scheme? Options are: the six-color Pride Flag ("pride"), the Philadelphia People Of Color Pride Flag ("philly_poc_pride"), Gilbert Baker's 1978 Pride Flag ("gilbert_baker_pride"), the Bisexual Pride Flag ("bisexual_pride"), the Pansexual Pride Flag ("pansexual_pride"), the Asexual Pride Flag ("asexual_pride"), the Trans Pride Flag ("trans_pride"), the Genderfluid Pride Flag ("genderfluid_pride"), the Genderqueer Pride Flag ("genderqueer_pride"), the Polysexual Pride Flag ("polysexual_pride"), the Agender Pride Flag ("agender_pride"), the Aromantic Pride Flag ("aromantic_pride"), and the Nonbinary Pride Flag ("nonbinary_pride").
 #'
 #' @author Joel Le Forestier (Twitter: @@JoelLeForestier; Website: joelleforestier.com; Email: joel.leforestier@@mail.utoronto.ca)
 #'
-#' @examples # A scatterplot using the Philadelphia People Of Color Pride Flag
+#' @examples
+#' # A scatterplot using the Philadelphia People Of Color Pride Flag
 #'
 #' var1 <- rnorm(n = 80)
 #' var2 <- rnorm(n = 80)
