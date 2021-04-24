@@ -1,8 +1,31 @@
 #' Pride Flag Color Schemes
 #'
-#' This function contains a set of palettes based on the colors of various Pride flags. The function's only argument (palette) is used to select the flag you want to use as the basis of your color scheme. This function works well wrapped inside the scale_color_manual and scale_fill_manual arguments in ggplot2.
+#' This function contains a set of palettes based on the colors of various Pride
+#' flags. The function's only argument (\code{palette}) is used to select the flag
+#' you want to use as the basis of your color scheme. This function works well
+#' wrapped inside the \code{scale_color_manual} and \code{scale_fill_manual}
+#' functions in \pkg{ggplot2}.
 #'
-#' @param palette Which Pride flag would you like to use as the basis of your color scheme? Options are: the six-color Pride Flag ("pride"), the Philadelphia People Of Color Pride Flag ("philly_poc_pride"), Gilbert Baker's 1978 Pride Flag ("gilbert_baker_pride"), the Bisexual Pride Flag ("bisexual_pride"), the Pansexual Pride Flag ("pansexual_pride"), the Asexual Pride Flag ("asexual_pride"), the Trans Pride Flag ("trans_pride"), the Genderfluid Pride Flag ("genderfluid_pride"), the Genderqueer Pride Flag ("genderqueer_pride"), the Polysexual Pride Flag ("polysexual_pride"), the Agender Pride Flag ("agender_pride"), the Aromantic Pride Flag ("aromantic_pride"), and the Nonbinary Pride Flag ("nonbinary_pride").
+#' @param palette \[\code{character(1)}\]\cr
+#'  Which Pride flag would you like to use as the basis of your color scheme?
+#' 
+#' @details
+#' Available color schemes are:
+#' \itemize{
+#' \item \code{"pride"} -- the six-color Pride Flag
+#' \item \code{"philly_poc_pride"} -- the Philadelphia People Of Color Pride Flag
+#' \item \code{"gilbert_baker_pride"} -- Gilbert Baker's 1978 Pride Flag
+#' \item \code{"bisexual_pride"} -- the Bisexual Pride Flag
+#' \item \code{"pansexual_pride"} -- the Pansexual Pride Flag
+#' \item \code{"asexual_pride"} -- the Asexual Pride Flag
+#' \item \code{"trans_pride"} -- the Trans Pride Flag
+#' \item \code{"genderfluid_pride"} -- the Genderfluid Pride Flag
+#' \item \code{"genderqueer_pride"} -- the Genderqueer Pride Flag
+#' \item \code{"polysexual_pride"} -- the Polysexual Pride Flag
+#' \item \code{"agender_pride"} -- the Agender Pride Flag
+#' \item \code{"aromantic_pride"} -- the Aromantic Pride Flag
+#' \item \code{"nonbinary_pride"} -- the Nonbinary Pride Flag
+#' }
 #'
 #' @author Joel Le Forestier (Twitter: @@JoelLeForestier; Website: joelleforestier.com; Email: joel.leforestier@@mail.utoronto.ca)
 #'
@@ -15,7 +38,7 @@
 #' data <- data.frame(var1, var2, var3)
 #'
 #' ggplot(data = data, mapping = aes(x = var1, y = var2)) +
-#'   scale_color_manual(values = pride_palette(palette = "philly_poc_pride")) +
+#'   scale_color_manual(values = pride_palette("philly_poc_pride")) +
 #'   geom_point(aes(color = var3)) +
 #'   theme_minimal()
 #'
