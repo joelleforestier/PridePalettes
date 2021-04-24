@@ -44,32 +44,8 @@
 #'
 #' @export
 pride_palette <- function(palette) {
-  if (palette == "pride")
-    PRIDE_PALETTES[["pride"]]
-  else if (palette == "philly_poc_pride")
-    PRIDE_PALETTES[["philly_poc_pride"]]
-  else if (palette == "gilbert_baker_pride")
-    PRIDE_PALETTES[["gilbert_baker_pride"]]
-  else if (palette == "bisexual_pride")
-    PRIDE_PALETTES[["bisexual_pride"]]
-  else if (palette == "pansexual_pride")
-    PRIDE_PALETTES[["pansexual_pride"]]
-  else if (palette == "asexual_pride")
-    PRIDE_PALETTES[["asexual_pride"]]
-  else if (palette == "trans_pride")
-    PRIDE_PALETTES[["trans_pride"]]
-  else if (palette == "genderfluid_pride")
-    PRIDE_PALETTES[["genderfluid_pride"]]
-  else if (palette == "genderqueer_pride")
-    PRIDE_PALETTES[["genderqueer_pride"]]
-  else if (palette == "polysexual_pride")
-    PRIDE_PALETTES[["polysexual_pride"]]
-  else if (palette == "agender_pride")
-    PRIDE_PALETTES[["agender_pride"]]
-  else if (palette == "aromantic_pride")
-    PRIDE_PALETTES[["aromantic_pride"]]
-  else if (palette == "nonbinary_pride")
-    PRIDE_PALETTES[["nonbinary_pride"]]
+  if (palette %in% names(PRIDE_PALETTES))
+    PRIDE_PALETTES[[palette]]
   else
     stop("No such pride flag! Available pride palettes are described under Details section.")
 }
