@@ -44,6 +44,9 @@
 #'
 #' @export
 pride_palette <- function(palette) {
+  if (!is.character(palette) | length(palette) != 1)
+    stop("Palette must be a single string")
+  
   if (palette %in% names(PRIDE_PALETTES))
     PRIDE_PALETTES[[palette]]
   else
