@@ -8,12 +8,11 @@
 #'
 #' @author Joel Le Forestier (Twitter: @@JoelLeForestier; Website: joelleforestier.com; Email: joel.leforestier@@mail.utoronto.ca)
 #'
-#' @example # Generate a Trans Pride Flag
+#' @examples # Generate a Trans Pride Flag
 #'
 #' flag(flag = "trans_pride)
 #'
 #' @export
-#'
 
 flag <- function(flag) {
 
