@@ -1,14 +1,22 @@
-Package: PridePalettes
-Title: Color Palettes Based on Pride Flags
-Version: 0.1
+Package: SimulPower
+Title: Simultaneous Power Analysis for a Set of Statistical Tests
+Version: 0.8.0
 Authors@R: 
-    person(given = "Joel",
+    person(given = "Joel Michel",
            family = "Le Forestier",
            role = c("aut", "cre"),
-           email = "joel.leforestier@mail.utoronto.ca")
-Description: Use color schemes from Pride flags in ggplot2 graphs by wrapping the pride_palette() function inside scale_color_manual or scale_fill_manual arguments. Or, generate pre-made Pride flags using the flag() function.
-Imports: ggplot2 (>= 3.3.1)
-License: `use_mit_license()`
+           email = "joel.leforestier@mail.utoronto.ca",
+           comment = c(ORCID = "0000-0003-3330-2171"))
+Description: Perform statistical power analysis simultaneously for a set of tests through simulation. Outputs statistical power to detect each effect independently, as well as to detect all of them simultaneously. 
+Imports: MASS (>= 7.3-54),
+         doParallel (>= 1.0.15),
+         foreach (>= 1.5.0),
+         parallel (>= 4.0.0),
+         ggplot2 (>= 3.3.1),
+         tidyr (>= 1.0.3)
+Date/Publication: 2021-07-26
+License: See LICENSE.txt
+URL: https://doi.org/10.31219/osf.io/w96uk
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
